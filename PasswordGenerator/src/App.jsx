@@ -29,9 +29,9 @@ function App() {
     passwordGenerator()
   }, [length, numbersAllowed, charAllowed])
   return (
-    <>
+    <><div className='flex justify-center mt-64'>
       <div className='bg-gray-700 w-full max-w-md rounded-xl m-2 p-2'>
-        <h2 className='text-xl mt-4'>Password Generator</h2>
+        <h2 className='text-xl mt-4 text-center'>Password Generator</h2>
         <div className='w-full flex'>
           <input className=' w-full mt-4 p-2 rounded text-orange-500 bg-white'
            type="text" 
@@ -60,6 +60,7 @@ function App() {
               onChange={() => { setCharAllowed((prev) => !prev) }} />
           <label htmlFor="">Character</label>
         </div>
+      </div>
       </div>
     </>
   )
